@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    background-color: #f8f6f1;
+    background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.01) 2px, rgba(0, 0, 0, 0.01) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0, 0, 0, 0.01) 2px, rgba(0, 0, 0, 0.01) 4px),
+        repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(0, 0, 0, 0.008) 3px, rgba(0, 0, 0, 0.008) 6px),
+        repeating-linear-gradient(-45deg, transparent, transparent 3px, rgba(0, 0, 0, 0.008) 3px, rgba(0, 0, 0, 0.008) 6px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+    color: #2c2c2c;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #5a5a5a;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle:last-of-type {
+    margin-bottom: 0;
+}
+
+.introduction {
+    margin-bottom: 3.5rem;
+    padding: 0 1rem;
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #3a3a3a;
+    max-width: 600px;
+    margin: 0 auto 1rem auto;
+}
+
+.intro-text:last-child {
+    margin-bottom: 0;
+}
+
+.focus-areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.focus-area {
+    text-align: left;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-left: 3px solid #2c2c2c;
+}
+
+.focus-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.focus-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5a5a5a;
+    margin: 0;
+}
+
+.worktools-note {
+    margin-top: 2rem;
+}
+
+.inline-link {
+    color: #2c2c2c;
+    text-decoration: underline;
+    text-decoration-color: #5a5a5a;
+    text-decoration-thickness: 1px;
+    transition: all 0.3s ease;
+}
+
+.inline-link:hover {
+    text-decoration-color: #2c2c2c;
+    text-decoration-thickness: 2px;
+}
+
+.currently-working {
+    margin-bottom: 3rem;
+    padding: 1.5rem 2rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.working-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #7a7a7a;
+    margin-bottom: 0.5rem;
+}
+
+.working-project {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-style: italic;
+    margin: 0;
+}
+
+.cta {
+    margin-bottom: 4rem;
+}
+
+.enter-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2c2c2c;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #2c2c2c;
+    transition: all 0.3s ease;
+    font-family: 'Crimson Pro', Georgia, serif;
+    letter-spacing: 0.02em;
+}
+
+.enter-button:hover {
+    color: #1a1a1a;
+    border-bottom-color: #5a5a5a;
+    transform: translateX(4px);
+}
+
+.arrow {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.enter-button:hover .arrow {
+    transform: translateX(4px);
+}
+
+.footer {
+    border-top: 1px solid #e8e6e0;
+    padding-top: 2rem;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.note-count {
+    font-size: 0.95rem;
+    color: #7a7a7a;
+    font-style: italic;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        background-image:
+            repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.015) 2px, rgba(255, 255, 255, 0.015) 4px),
+            repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255, 255, 255, 0.015) 2px, rgba(255, 255, 255, 0.015) 4px),
+            repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(255, 255, 255, 0.01) 3px, rgba(255, 255, 255, 0.01) 6px),
+            repeating-linear-gradient(-45deg, transparent, transparent 3px, rgba(255, 255, 255, 0.01) 3px, rgba(255, 255, 255, 0.01) 6px);
+        background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+        color: #e8e6e0;
+    }
+
+    .title {
+        color: #f8f6f1;
+    }
+
+    .subtitle {
+        color: #a8a8a8;
+    }
+
+    .intro-text {
+        color: #c8c8c8;
+    }
+
+    .focus-area {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-left-color: #e8e6e0;
+    }
+
+    .focus-title {
+        color: #f8f6f1;
+    }
+
+    .focus-description {
+        color: #a8a8a8;
+    }
+
+    .currently-working {
+        background-color: rgba(255, 255, 255, 0.07);
+    }
+
+    .working-label {
+        color: #888888;
+    }
+
+    .working-project {
+        color: #f8f6f1;
+    }
+
+    .enter-button {
+        color: #e8e6e0;
+        border-bottom-color: #e8e6e0;
+    }
+
+    .enter-button:hover {
+        color: #f8f6f1;
+        border-bottom-color: #a8a8a8;
+    }
+
+    .inline-link {
+        color: #e8e6e0;
+        text-decoration-color: #a8a8a8;
+    }
+
+    .inline-link:hover {
+        text-decoration-color: #e8e6e0;
+    }
+
+    .footer {
+        border-top-color: #333333;
+    }
+
+    .note-count {
+        color: #888888;
+    }
+
+    .logo {
+        opacity: 0.8;
+    }
+
+    .logo:hover {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .intro-text {
+        font-size: 1.05rem;
+    }
+
+    .focus-areas {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .focus-area {
+        padding: 1.25rem;
+    }
+
+    .focus-title {
+        font-size: 1.35rem;
+    }
+
+    .currently-working {
+        padding: 1.25rem 1.5rem;
+    }
+
+    body {
+        padding: 1.5rem;
+    }
+}
