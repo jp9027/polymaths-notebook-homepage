@@ -8,31 +8,44 @@ body {
     font-family: 'Crimson Pro', Georgia, serif;
     background-color: #f4efe6;
     background-image:
-        /* Primary marble veins */
+        /* Primary marble veins — bold */
         linear-gradient(108deg,
-            transparent 0%, transparent 28%,
-            rgba(10,8,3,0.07) 28.3%, rgba(10,8,3,0.07) 29%,
-            transparent 29.3%, transparent 55%,
-            rgba(8,6,2,0.05) 55.4%, rgba(8,6,2,0.05) 56.2%,
-            transparent 56.5%, transparent 100%
+            transparent 0%, transparent 22%,
+            rgba(10,8,3,0.13) 22.3%, rgba(10,8,3,0.13) 23.2%,
+            transparent 23.5%, transparent 48%,
+            rgba(8,6,2,0.10) 48.4%, rgba(8,6,2,0.10) 49.4%,
+            transparent 49.7%, transparent 100%
         ),
         /* Secondary veins */
         linear-gradient(74deg,
-            transparent 0%, transparent 42%,
-            rgba(12,9,4,0.05) 42.3%, rgba(12,9,4,0.05) 43%,
-            transparent 43.5%, transparent 70%,
-            rgba(7,5,2,0.04) 70.3%, rgba(7,5,2,0.04) 71%,
-            transparent 71.3%, transparent 100%
+            transparent 0%, transparent 35%,
+            rgba(12,9,4,0.10) 35.3%, rgba(12,9,4,0.10) 36.2%,
+            transparent 36.6%, transparent 63%,
+            rgba(7,5,2,0.08) 63.3%, rgba(7,5,2,0.08) 64.1%,
+            transparent 64.4%, transparent 100%
         ),
         /* Tertiary veins */
-        linear-gradient(138deg,
-            transparent 0%, transparent 15%,
-            rgba(9,7,3,0.04) 15.2%, rgba(9,7,3,0.04) 16%,
-            transparent 16.3%, transparent 62%,
-            rgba(11,8,3,0.06) 62.3%, rgba(11,8,3,0.06) 63.2%,
-            transparent 63.5%, transparent 100%
+        linear-gradient(152deg,
+            transparent 0%, transparent 18%,
+            rgba(9,7,3,0.09) 18.2%, rgba(9,7,3,0.09) 19%,
+            transparent 19.3%, transparent 57%,
+            rgba(11,8,3,0.11) 57.3%, rgba(11,8,3,0.11) 58.3%,
+            transparent 58.6%, transparent 100%
+        ),
+        /* Fine detail veins */
+        linear-gradient(91deg,
+            transparent 0%, transparent 38%,
+            rgba(8,6,2,0.07) 38.2%, rgba(8,6,2,0.07) 38.6%,
+            transparent 38.9%, transparent 72%,
+            rgba(10,8,3,0.06) 72.2%, rgba(10,8,3,0.06) 72.7%,
+            transparent 73%, transparent 100%
+        ),
+        /* Wide soft wash */
+        linear-gradient(120deg,
+            rgba(8,6,2,0.03) 0%, rgba(8,6,2,0.03) 40%,
+            transparent 55%, transparent 100%
         );
-    background-size: 100% 100%, 100% 100%, 100% 100%;
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
     color: #2c2c2c;
     line-height: 1.6;
     min-height: 100vh;
