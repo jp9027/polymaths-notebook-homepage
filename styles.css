@@ -60,8 +60,12 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.subtitle:last-of-type {
-    margin-bottom: 0;
+.byline {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #8a8a8a;
+    font-style: italic;
+    margin-top: 0.5rem;
 }
 
 .introduction {
@@ -83,10 +87,10 @@ body {
 
 .focus-areas {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
     margin: 2rem auto;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .focus-area {
@@ -151,8 +155,108 @@ body {
     margin: 0;
 }
 
+/* Products section */
+.products {
+    margin-bottom: 3.5rem;
+}
+
+.section-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #9a9a9a;
+    margin-bottom: 1.25rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product-card {
+    text-align: left;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-left: 3px solid #2c2c2c;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: border-left-color 0.3s ease, background-color 0.3s ease;
+}
+
+.product-card:hover {
+    border-left-color: #8a7a5a;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.4rem;
+}
+
+.product-desc {
+    font-size: 0.95rem;
+    color: #6a6a6a;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #2c2c2c;
+    font-weight: 600;
+    margin: 0;
+}
+
+.product-arrow {
+    font-weight: 400;
+    color: #9a9a9a;
+}
+
+/* Email capture */
+.email-capture {
+    margin-bottom: 3.5rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-headline {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.email-sub {
+    font-size: 1rem;
+    color: #6a6a6a;
+    font-style: italic;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+.email-soon {
+    font-size: 0.9rem;
+    color: #9a9a9a;
+    font-style: italic;
+    margin: 0;
+}
+
 .cta {
     margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
 }
 
 .enter-button {
@@ -185,6 +289,17 @@ body {
 
 .enter-button:hover .arrow {
     transform: translateX(4px);
+}
+
+.enter-button.secondary {
+    font-size: 1rem;
+    color: #8a8a8a;
+    border-bottom-color: #c8c8c8;
+}
+
+.enter-button.secondary:hover {
+    color: #5a5a5a;
+    border-bottom-color: #8a8a8a;
 }
 
 .footer {
@@ -293,6 +408,58 @@ body {
     .logo:hover {
         opacity: 1;
     }
+
+    .product-card {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-left-color: #e8e6e0;
+    }
+
+    .product-card:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+        border-left-color: #c8b080;
+    }
+
+    .product-name {
+        color: #f8f6f1;
+    }
+
+    .product-desc {
+        color: #a8a8a8;
+    }
+
+    .product-price {
+        color: #e8e6e0;
+    }
+
+    .email-capture {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .email-headline {
+        color: #f8f6f1;
+    }
+
+    .email-sub {
+        color: #a8a8a8;
+    }
+
+    .section-label {
+        color: #666666;
+    }
+
+    .byline {
+        color: #666666;
+    }
+
+    .enter-button.secondary {
+        color: #666666;
+        border-bottom-color: #444444;
+    }
+
+    .enter-button.secondary:hover {
+        color: #a8a8a8;
+        border-bottom-color: #666666;
+    }
 }
 
 @media (max-width: 768px) {
@@ -321,8 +488,19 @@ body {
         font-size: 1.35rem;
     }
 
-    .currently-working {
-        padding: 1.25rem 1.5rem;
+    .focus-areas {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .email-capture {
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
     }
 
     body {
